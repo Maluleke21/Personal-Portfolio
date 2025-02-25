@@ -3,7 +3,7 @@
   <a href="https://hlavutelo.vercel.app/" target="_blank">hlavutelo.tech</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+ 
 </div>
 
 <br/>
