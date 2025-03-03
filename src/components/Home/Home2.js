@@ -19,21 +19,21 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I fell in love with Tech & programming and I have at least learnt
+              something, I think…  although learning never stops,🤷‍♂️
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Java, C#, Javascript and Python. </b>
+                <b className="purple"> Java, C#, Javascript and Python, etc. </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Web Technologies, Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Software, Data & Security.
+                  Software, Data & hopefully Security at s.
                 </b>
               </i>
               <br />
@@ -67,7 +67,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/hlavutelo"
+                  href="https://github.com/Maluleke21" 
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +77,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/hlavutelo"
+                  href="https://x.com/cultivatedsava1?s=21"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,23 +87,15 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/hlavutelo/"
+                  href="https://www.linkedin.com/in/hlavutelo-denrol-maluleke-321837296
+"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/hlavutell"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
+
               </li>
             </ul>
           </Col>

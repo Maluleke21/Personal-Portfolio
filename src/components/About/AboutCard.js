@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Hlavutelo</span> from{" "}
             <span className="purple"> South Africa.</span>
             <br />
-            I am currently employed as a data engineer at FNB.
+            I am currently employed as a Data Engineer Intern at Capaciti.
             <br />
             I have completed a Diploma in Information Technology in Software
             Development from IIE Rosebank College.
