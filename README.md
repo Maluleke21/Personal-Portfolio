@@ -29,9 +29,6 @@
     <a href="https://github.com/hlavutelo/Portfolio/issues">Request Feature</a>
 </h3>
 
-## TL;DR
-
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [hlavutelo](https://github.com/hlavutelo/Portfolio). Thanks!
 
 ## Built With
 
