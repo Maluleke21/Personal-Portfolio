@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import Particle from "../Particle";
 
-const resumeUrl = "https://maluleke.netlify.app/static/media/Hlavutelo_Maluleke_CV.0da9b0d2b34bc5e041e8.pdf";
+const resumeUrl = "/Hlavutelo-Maluleke-CV.pdf";
 
 function ResumeNew() {
   return (
@@ -12,8 +12,8 @@ function ResumeNew() {
       <Particle />
       <Container style={{ position: "relative" }}>
         <h1>Résumé</h1>
-        <Button variant="primary" href={resumeUrl} target="_blank" rel="noopener noreferrer">
-          <AiOutlineDownload aria-hidden="true" /> Open CV (PDF)
+        <Button variant="primary" href={resumeUrl} download="Hlavutelo-Maluleke-CV.pdf">
+          <AiOutlineDownload aria-hidden="true" /> Download CV (PDF)
         </Button>
         <iframe
           src={resumeUrl}

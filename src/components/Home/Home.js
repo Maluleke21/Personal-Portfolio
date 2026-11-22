@@ -24,13 +24,21 @@ function Home() {
                 <strong className="main-name"> Hlavutelo Maluleke</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div className="hero-tagline">
+                I turn raw data into decisions and ideas into software.
+                <br />
+                <span className="hero-tagline-sub">
+                  Data engineering · Banking systems · Cloud development
+                </span>
+              </div>
+
+              <div style={{ padding: "40px 50px", textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-             
+              {/* Avatar lives in Home2 intro section */}
             </Col>
           </Row>
         </Container>

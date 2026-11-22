@@ -15,40 +15,38 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="accent"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with Tech & programming and I have at least learnt
-              something, I think…  although learning never stops,🤷‍♂️
+              I'm a <b className="accent">Data Engineer & Software Developer</b> based in{" "}
+              <b className="accent">Johannesburg, South Africa</b>. I built
+              production-grade ETL/ELT pipelines at{" "}
+              <b className="accent">FNB (First National Bank)</b>.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I specialise in the full data lifecycle ingestion, transformation,
+              integration, storage and reporting using tools like{" "}
               <i>
-                <b className="purple"> Java, C#, Javascript and Python, etc. </b>
+                <b className="accent">Ab Initio, Apache Spark, SQL and Power BI.</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              On the software side, I'm fluent in{" "}
               <i>
-                <b className="purple">Web Technologies, Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Software, Data & hopefully Security at s.
-                </b>
+                <b className="accent">Python, Java, JavaScript, C# and React</b>
               </i>
+              , and I love building things that are both technically solid and
+              genuinely useful.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I thrive at the intersection of{" "}
+              <b className="accent">data engineering, cloud platforms</b> and{" "}
+              <b className="accent">software development</b> whether that's designing
+              scalable data solutions on{" "}
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="accent">Azure</b>
+              </i>{" "}
+              or shipping full-stack web products.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -61,15 +59,15 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="accent">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Maluleke21" 
+                  href="https://github.com/Maluleke21"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -79,22 +77,20 @@ function Home2() {
                   href="https://x.com/cultivatedsava1?s=21"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/hlavutelo-denrol-maluleke-321837296
-"
+                  href="https://www.linkedin.com/in/hlavutelo-denrol-maluleke-321837296"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
-
               </li>
             </ul>
           </Col>
