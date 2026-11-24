@@ -1,89 +1,48 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import healthcare from "../../Assets/Projects/healthcare.webp";
+import fitforge from "../../Assets/Projects/fitforge.svg";
+import fredrose from "../../Assets/Projects/fredrose.webp";
 
-function Projects() {
+const projects = [
+  {
+    title: "Healthcare_DB",
+    stack: "Python · pandas · PostgreSQL",
+    image: healthcare,
+    alt: "Gender analysis chart from the healthcare ETL notebook",
+    description: "I transformed nested CDC API records into relational tables, then used SQL and a Jupyter notebook to explore the cleaned healthcare data.",
+    href: "https://github.com/Maluleke21/healthcare_db-etl-pipeline",
+    linkText: "Explore the pipeline"
+  },
+  {
+    title: "FitForge",
+    stack: "React · TypeScript · Express · PostgreSQL",
+    image: fitforge,
+    brand: true,
+    alt: "FitForge app icon",
+    description: "A mobile-first fitness app for planning workouts, tracking nutrition, and reviewing progress. A React frontend and Express API keep each user’s fitness records tied to their account."
+  },
+  {
+    title: "Fredrose Security Services",
+    stack: "React · TypeScript · Vite",
+    image: fredrose,
+    alt: "Team photograph from the Fredrose Security Services website",
+    description: "I built a responsive website for a security company in Malamulele. Visitors can explore guarding and security systems, find emergency contact details, and request a security assessment.",
+    href: "https://github.com/Maluleke21/fredrose-Security",
+    linkText: "View source"
+  }
+];
+
+export default function Projects() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
+    <main className="project-section selected-work">
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Empower SME"
-              description="Web platform that recruits students for work opportunities.
-               It likely connects students with job opportunities,
-                streamlining the hiring process for employers while making it easier for students to find relevant work.
-                 The app might include features such as job listings, applications,
-               employer-student matching, and possibly integrated communication or payment options."
-              demoLink="https://empowersme.onrender.com"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Calculator"
-              description="My Calculator App is a digital tool designed to perform mathematical calculations efficiently.
-               It likely includes basic arithmetic operations (addition, subtraction,
-                multiplication, division) and may have additional features such as scientific functions,
-                 a history log, or a user-friendly interface for ease of use"
-              ghLink="https://github.com/Maluleke21/MyCalculator_gui.git"  
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="My To-Do-List"
-              description="My To-Do List App is a productivity tool designed to help users efficiently manage their tasks.
-               It likely includes features such as task creation, editing, deletion, due dates, and possibly categorization or priority levels.
-               The app may also support reminders, progress tracking, or cloud synchronization for accessibility across devices."
-              ghLink="https://github.com/Maluleke21/My-To-do-List-app.git"              
-            />
-          </Col>
-
-          //<Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves.
-               The model was successfully able to detect diseased and healthy leaves of 14 unique plants.
-                I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-             
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-            />
-          </Col>
-          
-        </Row>
+        <h1>Selected <span className="accent">projects</span></h1>
+        <div className="work-grid">
+          {projects.map(project => <ProjectCard key={project.title} {...project} />)}
+        </div>
       </Container>
-    </Container>
+    </main>
   );
 }
-
-export default Projects;

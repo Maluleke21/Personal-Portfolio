@@ -1,55 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import React from "react";
+import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import Particle from "../Particle";
+
+const resumeUrl = "/Hlavutelo-Maluleke-CV.pdf";
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+    <Container fluid className="resume-section">
+      <Particle />
+      <Container style={{ position: "relative" }}>
+        <h1>Résumé</h1>
+        <Button variant="primary" href={resumeUrl} download="Hlavutelo-Maluleke-CV.pdf">
+          <AiOutlineDownload aria-hidden="true" /> Download CV (PDF)
+        </Button>
+        <iframe
+          src={resumeUrl}
+          title="Hlavutelo Maluleke’s résumé"
+          style={{ display: "block", width: "100%", height: "80vh", border: 0, marginTop: "1.5rem" }}
+        />
       </Container>
-    </div>
+    </Container>
   );
 }
 
